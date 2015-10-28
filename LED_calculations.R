@@ -26,3 +26,11 @@ uEinsteins <- Einstens/10^-6
 
 uEinsteins #but need to convert this to per m2
 #also seems very high...did I mess tomething up?
+
+#At at a distance of 1M calculate the area of a sphere 4*pi*r^2
+
+area <- 4*pi*1^2 #(obviously that last term isn't needed since the distance is one but I keep it for completeness)
+
+uEinsteins.per.m2 <- uEinsteins/area
+
+uEinsteins.per.m2

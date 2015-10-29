@@ -1,20 +1,19 @@
-h <- 6.63e-34
-c <- 3e8
-lambda <- 740
-avogadro <- 6.022e23
+h <- 6.63e-34 # Planck's constant
+c <- 3e8 # speed of light m/s
+lambda <- 740 #wavelength
+avogadro <- 6.022e23 # number of photons per mole
 
+Joules.per.photon <- h*c/lambda
 
-watts.per.photon <- h*c/lambda
-
-watts.per.photon
+Joules.per.photon
 
 #Calculations for LED.engin http://www.ledengin.com/products/emitters#LZ4
 
-led.watts <- 2.7
+led.watts <- 2.7 #note: a Watt is a Joule per second
 
 led.watts
 
-photons <- led.watts/watts.per.photon #photons per LED
+photons <- led.watts/Joules.per.photon #photons per LED per second
  
 photons
 
